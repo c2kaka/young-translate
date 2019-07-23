@@ -11,3 +11,7 @@
   color: #333;
   background: #f3f3f3;
 } 
+
+.view-hover {
+  background-color: #f3f3f3!important;
+}

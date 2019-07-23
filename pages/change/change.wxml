@@ -1,3 +1,12 @@
-<view>
-    选择语言
+<view class='container lang-list'>
+    <view class='title'>翻译成</view>
+    <view class='items' hover-class='view-hover' wx:for='{{langList}}' wx:for-item='language'
+      wx:key='index' data-chs='{{language.chs}}' data-lang='{{language.lang}}' data-index='{{index}}'
+      bindtap='onTabItem'
+    >
+      <view class='item-content'>
+        <text class='langType'>{{language.chs}}</text>
+        <icon type='success_no_circle' size='28rpx' wx:if='{{curLang.index===index}}'></icon>
+      </view>  
+    </view>
 </view>

@@ -17,7 +17,7 @@
         </view>
         <view class='icon-wrapper'>
            <text class='iconfont icon-close' hidden='{{!showCloseIcon}}' bindtap='onTabClose'></text>
-           <icon type='success_no_circle' color='black' hidden='{{!showCloseIcon}}' bindtap='onConfirm'></icon>
+           <icon type='success_no_circle' size='50rpx' color='black' hidden='{{!showCloseIcon}}' bindtap='onConfirm'></icon>
         </view>
       </view>
 
