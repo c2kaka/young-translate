@@ -1,0 +1,75 @@
+.change{
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding: 16rpx 32rpx;
+  color: #00b26a;
+  font-size: 24rpx;
+  border-bottom: 1px solid #ddd;
+  background: white;
+}
+.change .icon-right {
+  color: #888;
+}
+.change .icon-down {
+  margin-left: 8rpx;
+  color: #00b26a;
+  font-size: 16rpx;
+}
+
+.translate-area{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+}
+
+.input-area{
+  display: flex;
+  padding: 16rpx 32rpx;
+  border-bottom: 1px solid #c7cee0;
+  background: white;
+}
+
+.input-wrapper{
+  flex: 1;
+  display: flex;
+}
+
+.input-wrapper textarea{
+  background-color: #fff;
+  width: calc(100% - 48rpx);
+  margin: 0;
+  box-sizing: border-box;
+}
+
+.input-area .icon-wrapper{
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+.icon-wrapper .icon-close{
+  font-size: 52rpx;
+  color: #000;
+  flex-shrink: 0;
+}
+
+.result-area{
+  min-height: 300rpx;
+  margin: 16rpx 16rpx;
+  background: #00b26a;
+  border-radius: 4px;
+}
+
+.result-area .result-title{
+  font-size: 28rpx;
+  padding: 16rpx 16rpx;
+  color: white;
+
+}
+
+.result-area .result-content{
+  font-size: 36rpx;
+  color: white;
+  padding: 16px 16px 32px 16px;
+}

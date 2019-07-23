@@ -1,0 +1,31 @@
+<!--index.wxml-->
+<view class="container">
+    <view class='change'>
+      <navigator url='/pages/change/change' hover-class='navigator-hover'>
+        <text>到{{curLang.chs}}</text>
+        <text class='iconfont icon-down'></text>
+      </navigator>
+    </view>
+
+    <view class='translate-area'>
+      <view class='input-area'>
+        <view class='input-wrapper'>
+          <textarea placeholder='请输入要翻译的内容' placeholder-style='color:#ddd' value='{{queryContent}}'
+            bindinput='onInput' bindconfirm='onConfirm' 
+          >
+          </textarea>
+        </view>
+        <view class='icon-wrapper'>
+           <text class='iconfont icon-close' hidden='{{!showCloseIcon}}' bindtap='onTabClose'></text>
+           <icon type='success_no_circle' color='black' hidden='{{!showCloseIcon}}' bindtap='onConfirm'></icon>
+        </view>
+      </view>
+
+      <view class='result-area'>
+        <view class='result-title'>译文</view>
+        <view class='result-content' wx:for='{{result}}' wx:key='index'>
+          <text selectable='true'>{{item.dst}}</text>
+        </view>
+      </view>
+    </view>
+</view>
